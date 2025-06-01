@@ -1,12 +1,12 @@
-import Scene from './Scene'
+import DonutScene from './Scenes/DonutScene'
 
 function MainPage() {
   return (
     <>
-    <div className="bg-white">
+    
       <div className='h-[100vh] w-full flex flex-col items-center justify-center relative'>
 
-        <div className='bg-white rounded-lg shadow-lg w-full h-full flex flex-wrap items-start justify-center pt-0 m-0'>
+        <div className='bg-white w-full h-full flex flex-wrap items-start justify-center pt-0 m-0'>
           <div className="relative w-full flex flex-col items-center">
             <h1
               className="w-full text-center m-0 leading-none text-[clamp(10rem,30vw,40rem)]"
@@ -40,13 +40,10 @@ function MainPage() {
           </div>
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[65%] w-full">
-            <Scene />
+            <DonutScene />
         </div>
 
       </div>
-        
-
-    </div>
     </>
   )
 }

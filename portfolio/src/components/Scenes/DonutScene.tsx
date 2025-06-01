@@ -32,7 +32,7 @@ function CameraController() {
   return null; // pas besoin de rien rendre
 }
 
-export default function Scene() {
+export default function DonutScene() {
   return (
     <Canvas 
       camera={{ position: [0, 0, 5], fov: 75 }}
@@ -42,10 +42,9 @@ export default function Scene() {
         <CameraController />
         <ambientLight />
         <pointLight position={[1, 2.5, 2]} intensity={10} />
-        <pointLight position={[0, 2.5, 0]} intensity={1} />
+        <pointLight position={[0, 2.5, 0]} intensity={1.5} />
         {/* <Box position={[0,2,0]}/> */}
         <Model position={[0, 0, 0]} scale={[2,2,2]} rotation={[0, 0, 0]}/>
-        
     </Canvas>
   );
 }
