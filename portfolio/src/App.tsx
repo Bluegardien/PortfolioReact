@@ -1,7 +1,7 @@
 import './App.css'
 import MainPage from './components/MainPage'
 import NavBar from './components/NavBar'
-import ProjectPage from './components/ProjectPage'
+import ParcoursPage from './components/ParcoursPage'
 function App() {
   return (
     <>
@@ -11,7 +11,7 @@ function App() {
     <div className='bg-gray-300 p-[5vw] pb-[0] pt-[0]'>
       <div className="bg-white">
         <MainPage />
-        <ProjectPage/>
+        <ParcoursPage/>
       </div>
     </div>
     </>
