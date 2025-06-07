@@ -25,9 +25,9 @@ function SceneImage({ url, ...props }: { url: string } & JSX.IntrinsicElements['
   );
 }
 
-function Model(props: JSX.IntrinsicElements['mesh']) {
+function Model({ objName, ...props }: { objName: string } & JSX.IntrinsicElements['mesh']) {
   const group = useRef<THREE.Group>(null)
-  const { scene, animations } = useGLTF('/panel3.glb')
+  const { scene, animations } = useGLTF(`/${objName}.glb`)
   console.log("Model loaded")
   console.log(animations.length)
   const mixer = useRef<THREE.AnimationMixer | null>(null)
@@ -54,14 +54,14 @@ function CameraController() {
 
   useEffect(() => {
     // Par exemple, la caméra regarde vers le point (0, 0, 0)
-    camera.position.set(3, 2, 15);
-    camera.lookAt(new THREE.Vector3(1, 0, 0));
+    camera.position.set(0, 3, 5);
+    camera.lookAt(new THREE.Vector3(0, 2, 0));
   }, [camera]);
 
   return null; // pas besoin de rien rendre
 }
 
-export default function PanelScene({ imageUrl }: { imageUrl: string }) {
+export default function ProjectObject({ objName }: { objName: string }) {
   return (
     <Canvas 
       camera={{ position: [0, 0, 5], fov: 75 }}
@@ -70,11 +70,9 @@ export default function PanelScene({ imageUrl }: { imageUrl: string }) {
       >
         <CameraController />
         <ambientLight />
-        <pointLight position={[-10, 4, 10]} intensity={100} />
-        <pointLight position={[15, 1, 4]} intensity={60} />
+        <pointLight position={[0, 4, 4]} intensity={20} />
         {/* <Box position={[0,1.7,1]} scale={[0.3,0.3,0.3]}/> */}
-        <Model position={[0, 0, 0]} scale={[2,2,2]} rotation={[0, 0, 0]}/>
-        <SceneImage position={[0, 0, 1.5]} url={imageUrl}/>
+        <Model position={[0, 0, 0]} scale={[2,2,2]} rotation={[0, 0, 0]} objName={objName}/>
         
     </Canvas>
   );

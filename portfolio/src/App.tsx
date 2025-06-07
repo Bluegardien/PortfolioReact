@@ -2,7 +2,8 @@ import './App.css'
 import MainPage from './components/MainPage'
 import NavBar from './components/NavBar'
 import ParcoursPage from './components/ParcoursPage'
-import ProjectPage from './components/ProjectPage'
+import Browse from './components/Browse'
+import Contact from './components/Contact'
 function App() {
   return (
     <>
@@ -13,7 +14,8 @@ function App() {
       <div className="bg-white">
         <MainPage />
         <ParcoursPage/>
-        <ProjectPage/>
+        <Browse/>
+        <Contact/>
       </div>
     </div>
     </>
