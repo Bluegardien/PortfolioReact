@@ -4,6 +4,7 @@ export default function NavBar() {
         <div className='w-[60%] h-full flex mx-auto items-center justify-around'>
             <a href="#mainpage"><h2 className='text-2xl' style={{ fontFamily: "'Vina Sans', sans-serif" }}> Me Connaitre</h2></a>
             <a href="#parcourspage"><h2 className='text-2xl' style={{ fontFamily: "'Vina Sans', sans-serif" }}> Mon Parcours</h2></a>
+            <img src="logo.png" alt="" className="h-full" />
             <a href="#projetspage"><h2 className='text-2xl' style={{ fontFamily: "'Vina Sans', sans-serif" }}> Mes Projets</h2></a>
             <a href="#contactpage"><h2 className='text-2xl' style={{ fontFamily: "'Vina Sans', sans-serif" }}> Me Contacter</h2></a>
         </div>

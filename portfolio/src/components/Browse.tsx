@@ -58,7 +58,7 @@ const projets = [
   {
     title: 'Costle',
     description: 'Un jeu multijoueur aux mécaniques non intuitives',
-    descriptionlg: "Costle est un jeu multijoueur, construit grace au moteur de jeu Unity, il est inspiré notamment du jeu 'Muck', qui propose une experience de jeu unique et hilarante, avec des mécaniques de jeu non-intuitives, et un gameplay basé sur la survie.",
+    descriptionlg: "Costle est un de mes projets de jeu multijoueur, construit grace au moteur de jeu Unity, il est inspiré notamment du jeu 'Muck', qui propose une experience de jeu unique de par ses mécaniques de jeu non-intuitives, et un gameplay basé sur la survie.",
     image: 'projectimages/Costle.png', 
     obj: 'costle',
     tags: ['Game Developpement','Unity', 'csharp']
@@ -164,7 +164,7 @@ export default function Browse() {
                       <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                   )}
-                  <h1 className="text-4xl " style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
+                  <h1 className="text-4xl mx-auto" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
                   {filteredIndices.length > 1 && (
                     <button onClick={next} className='p-5'>
                       <FontAwesomeIcon icon={faChevronRight} />
