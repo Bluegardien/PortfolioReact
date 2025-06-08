@@ -126,10 +126,10 @@ export default function Browse() {
   const currentProject = projets[filteredIndices[current]];
 
   return (
-    <div id="projetspage" className="h-[100vh] w-full flex flex-col items-start justify-center relative bg-white">
+    <div id="projetspage" className="h-[100vh] w-full flex flex-col items-start justify-center relative bgc1">
         <div className="w-full h-[20%] flex items-center justify-between">
             <h1
-                className="m-0 ml-[10%] p-0  leading-none text-[clamp(5rem,10vw,10rem)]"
+                className="m-0 ml-[10%] p-0 txtc1 leading-none text-[clamp(5rem,10vw,10rem)]"
                 style={{ fontFamily: "'Vina Sans', sans-serif" }}
                 >
                 Mes projets
@@ -142,14 +142,14 @@ export default function Browse() {
             </div>
         </div>
         <div className="w-full h-[70%] flex justify-between p-10">  
-            <div className='h-full w-[30%] flex flex-col justify-around bg-gray-100 p-5'>
-              <h1 className="text-3xl" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
-              <p>{currentProject.descriptionlg}</p>
+            <div className='h-full w-[30%] flex flex-col justify-around bgc3 p-5'>
+              <h1 className="text-3xl txtc3" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
+              <p className="txtc3">{currentProject.descriptionlg}</p>
               <div className="flex flex-wrap mt-4">
                 {currentProject.tags && currentProject.tags.map((tag: string) => (
                   <h2
                     key={tag}
-                    className='text-2xl bg-gray-300 p-3 rounded-xl m-5'
+                    className='text-2xl bgc2 rounded-xl m-5'
                     style={{ fontFamily: "'Outfit', sans-serif" }}
                   >
                     {tag}
@@ -164,16 +164,16 @@ export default function Browse() {
                       <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                   )}
-                  <h1 className="text-4xl mx-auto" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
+                  <h1 className="text-4xl txtc3 mx-auto text-center" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
                   {filteredIndices.length > 1 && (
                     <button onClick={next} className='p-5'>
                       <FontAwesomeIcon icon={faChevronRight} />
                     </button >
                   )}
                 </div>
-                <div className='h-[60%] w-full'><ProjectObject objName={currentProject.obj}/></div>
+                <div className='h-[75%] w-full'><ProjectObject objName={currentProject.obj}/></div>
             </div>
-            <div className='h-full w-[30%] bg-gray-100 p-5'>
+            <div className='h-full w-[30%] bgc3 p-5'>
                 <img className='object-contain w-full h-full' src={currentProject.image} alt="" />
             </div>
         </div>

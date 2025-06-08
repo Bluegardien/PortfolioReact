@@ -2,9 +2,17 @@ import { Canvas, useThree } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import { useEffect, type JSX } from 'react';
 import * as THREE from 'three';
+import { MESH_COLOR } from './constants/meshColor';
 
 function Model(props: JSX.IntrinsicElements['mesh']) {
   const { scene } = useGLTF('/testdonut.glb');
+  // Parcours tous les meshes et applique une couleur
+  scene.traverse((child: THREE.Object3D) => {
+    if ((child as THREE.Mesh).isMesh && (child as THREE.Mesh).material) {
+      ((child as THREE.Mesh).material as THREE.MeshStandardMaterial).color = new THREE.Color(MESH_COLOR); // couleur orange
+      ((child as THREE.Mesh).material as THREE.MeshStandardMaterial).needsUpdate = true;
+    }
+  });
   return <primitive object={scene} {...props} />;
 }
 

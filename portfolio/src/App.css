@@ -8,3 +8,53 @@ html, body, #root {
 html {
   scroll-behavior: smooth;
 }
+.bgc1{
+  background-color: #D3C3B9;
+}
+.bgc2{
+  background-color: #3D4D55;
+}
+.bgc3{
+  background-color: #A79E9C;
+}
+.bgn{
+  background-color: #3D4D55;
+}
+.bgcc{
+  background-color: #10232A;
+}
+.txtc1{
+  color:#10232A
+}
+.txtc2{
+  color:#A79E9C
+}
+.txtc3{
+
+}
+
+
+/* .bgc1{
+  background-color: #161B30;
+}
+.bgc2{
+  background-color: #394458;
+}
+.bgc3{
+  background-color: #252F47;
+}
+.bgn{
+  background-color: #394458;
+}
+.bgcc{
+  background-color: #652037;
+}
+.txtc1{
+  color:#652037
+}
+.txtc2{
+  color:#252F47
+}
+.txtc3{
+
+} */

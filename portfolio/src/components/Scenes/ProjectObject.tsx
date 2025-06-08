@@ -2,11 +2,18 @@ import { Canvas, useThree, useFrame} from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import { useEffect, useRef, type JSX } from 'react';
 import * as THREE from 'three';
+import { MESH_COLOR } from './constants/meshColor';
 
 
 function Model({ objName, ...props }: { objName: string } & JSX.IntrinsicElements['mesh']) {
   const group = useRef<THREE.Group>(null)
   const { scene, animations } = useGLTF(`/${objName}.glb`)
+  scene.traverse((child: THREE.Object3D) => {
+      if ((child as THREE.Mesh).isMesh && (child as THREE.Mesh).material) {
+        ((child as THREE.Mesh).material as THREE.MeshStandardMaterial).color = new THREE.Color(MESH_COLOR); // couleur orange
+        ((child as THREE.Mesh).material as THREE.MeshStandardMaterial).needsUpdate = true;
+      }
+    });
   console.log("Model loaded")
   console.log(animations.length)
   const mixer = useRef<THREE.AnimationMixer | null>(null)

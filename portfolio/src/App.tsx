@@ -11,7 +11,7 @@ function App() {
     <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"></link>
     <NavBar></NavBar>
-    <div className='bg-gray-300 p-[5vw] pb-[0] pt-[0]'>
+    <div className='bgcc p-[5vw] pb-[0] pt-[0]'>
       <div className="bg-white">
         <MainPage />
         <ParcoursPage/>
