@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import ParcoursPage from './components/ParcoursPage'
 import Browse from './components/Browse'
 import Contact from './components/Contact'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Contact/>
       </div>
     </div>
+    <SpeedInsights/>
     </>
   )
 }
