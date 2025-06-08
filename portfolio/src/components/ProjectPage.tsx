@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PanelScene from './Scenes/PanelScene'
 
 const projets = [

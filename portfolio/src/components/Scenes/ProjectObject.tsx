@@ -1,29 +1,8 @@
-import { Canvas, useThree, useFrame, useLoader } from '@react-three/fiber';
-import { TextureLoader } from 'three';
+import { Canvas, useThree, useFrame} from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import { useEffect, useRef, type JSX } from 'react';
 import * as THREE from 'three';
 
-function Box(props: JSX.IntrinsicElements['mesh']) {
-  const meshRef = useRef<THREE.Mesh>(null!);
-
-  return (
-    <mesh {...props} ref={meshRef} rotation={[0.4, 0.2, 0]}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="orange" />
-    </mesh>
-
-  );
-}
-function SceneImage({ url, ...props }: { url: string } & JSX.IntrinsicElements['mesh']) {
-  const texture = useLoader(TextureLoader, url);
-  return (
-    <mesh {...props}>
-      <planeGeometry args={[20, 12]} />
-      <meshBasicMaterial map={texture} transparent />
-    </mesh>
-  );
-}
 
 function Model({ objName, ...props }: { objName: string } & JSX.IntrinsicElements['mesh']) {
   const group = useRef<THREE.Group>(null)
@@ -42,7 +21,7 @@ function Model({ objName, ...props }: { objName: string } & JSX.IntrinsicElement
     }
   }, [animations])
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     mixer.current?.update(delta)
   })
 

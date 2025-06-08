@@ -3,18 +3,6 @@ import { useGLTF } from '@react-three/drei';
 import { useEffect, useRef, type JSX } from 'react';
 import * as THREE from 'three';
 
-function Box(props: JSX.IntrinsicElements['mesh']) {
-  const meshRef = useRef<THREE.Mesh>(null!);
-
-  return (
-    <mesh {...props} ref={meshRef} rotation={[0.4, 0.2, 0]}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="orange" />
-    </mesh>
-
-  );
-}
-
 function Model(props: JSX.IntrinsicElements['mesh']) {
   const group = useRef<THREE.Group>(null)
   const { scene, animations } = useGLTF('/bookanimated.glb')
@@ -32,7 +20,7 @@ function Model(props: JSX.IntrinsicElements['mesh']) {
     }
   }, [animations])
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     mixer.current?.update(delta)
   })
 
