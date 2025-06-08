@@ -149,7 +149,7 @@ export default function Browse() {
                 {currentProject.tags && currentProject.tags.map((tag: string) => (
                   <h2
                     key={tag}
-                    className='text-2xl bgc2 rounded-xl m-5'
+                    className='text-2xl bgc2 rounded-xl m-5 p-2'
                     style={{ fontFamily: "'Outfit', sans-serif" }}
                   >
                     {tag}
