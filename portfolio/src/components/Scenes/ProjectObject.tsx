@@ -68,9 +68,10 @@ export default function ProjectObject({ objName }: { objName: string }) {
       gl={{ alpha: true }}
       style={{ background: 'transparent' }}
       >
-        <CameraController />
-        <ambientLight />
-        <pointLight position={[0, 4, 4]} intensity={20} />
+        <CameraController/>
+        <ambientLight/>
+        <pointLight position={[0, 4, 0]} intensity={20}/>
+         <pointLight position={[0, 2, 3]} intensity={20}/>
         {/* <Box position={[0,1.7,1]} scale={[0.3,0.3,0.3]}/> */}
         <Model position={[0, 0, 0]} scale={[2,2,2]} rotation={[0, 0, 0]} objName={objName}/>
         

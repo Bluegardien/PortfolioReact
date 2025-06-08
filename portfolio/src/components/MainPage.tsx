@@ -4,7 +4,7 @@ function MainPage() {
   return (
     <>
     
-      <div className='h-[100vh] w-full flex flex-col items-center justify-center relative'>
+      <div id="mainpage" className='h-[100vh] w-full flex flex-col items-center justify-center relative'>
 
         <div className='bg-white w-full h-full flex flex-wrap items-start justify-center pt-0 m-0'>
           <div className="relative w-full flex flex-col items-center">

@@ -4,7 +4,7 @@ import SittedScene from './Scenes/SittedScene'
 function ParcoursPage() {
   return (
     <>
-      <div className='h-[100vh] w-full flex flex-col items-center justify-center relative'>
+      <div id="parcourspage" className='h-[100vh] w-full flex flex-col items-center justify-center relative'>
         <h1
               className="m-0 leading-none text-[clamp(5rem,10vw,10rem)]"
               style={{ fontFamily: "'Vina Sans', sans-serif" }}

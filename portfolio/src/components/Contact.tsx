@@ -3,7 +3,7 @@ export default function Contact() {
 
 
   return (
-    <div className="h-[100vh] w-full flex flex-col items-start justify-center relative bg-white">
+    <div id="contactpage" className="h-[100vh] w-full flex flex-col items-start justify-center relative bg-white">
         <h1
                 className="m-0 ml-[10%] p-0  leading-none text-[clamp(5rem,10vw,10rem)]"
                 style={{ fontFamily: "'Vina Sans', sans-serif" }}
