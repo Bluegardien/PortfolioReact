@@ -143,13 +143,13 @@ export default function Browse() {
         </div>
         <div className="w-full h-[70%] flex justify-between p-10">  
             <div className='h-full w-[30%] flex flex-col justify-around bgc3 p-5'>
-              <h1 className="text-3xl txtc3" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
-              <p className="txtc3">{currentProject.descriptionlg}</p>
+              <h1 className="text-3xl txtc1" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
+              <p className="txtc1">{currentProject.descriptionlg}</p>
               <div className="flex flex-wrap mt-4">
                 {currentProject.tags && currentProject.tags.map((tag: string) => (
                   <h2
                     key={tag}
-                    className='text-2xl bgc2 rounded-xl m-5 p-2'
+                    className='text-2xl bgc2 rounded-xl txtc3 m-5 p-2'
                     style={{ fontFamily: "'Outfit', sans-serif" }}
                   >
                     {tag}

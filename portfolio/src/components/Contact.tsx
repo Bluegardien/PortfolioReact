@@ -18,7 +18,7 @@ export default function Contact() {
           <div className="w-[70%] h-full">
             <ContactScene />
           </div>
-          <div className='w-[40%] h-full flex flex-wrap'>
+          <div className='w-[40%] h-full flex txtc3 flex-wrap'>
             <div className='w-[80%] h-[30%] ml-[10%] bgc2 text-3xl m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
               <div className="mx-auto text-center flex items-center justify-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-3 text-5xl" />
