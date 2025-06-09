@@ -18,16 +18,21 @@ html {
   background-color: #A79E9C;
 }
 .bgn{
-  background-color: #3D4D55;
+  background-color: #10232A;
 }
 .bgcc{
-  background-color: #10232A;
+  background-image: url('/texturebg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .txtc1{
   color:#10232A
 }
 .txtc2{
   color:#A79E9C
+}
+.txtn{
+  color:#D3C3B9
 }
 .txtc3{
 

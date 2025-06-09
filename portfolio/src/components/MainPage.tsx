@@ -47,11 +47,11 @@ function MainPage() {
           </div>
 
           <div className='flex justify-between items-center w-full h-auto pl-15 pr-15 fade-in' style={{ opacity: visible[2] ? 1 : 0, transform: visible[2] ? 'translateY(0)' : 'translateY(30px)' }}>
-            <div className="text-3xl w-[30%] bgc2 p-5 txtc3 rounded-xl  shadow-[0_3px_10px_rgb(0,0,0,0.2)]"  style={{ fontFamily: "'Outfit', sans-serif" }}>
+            <div className=" w-[30%] bgc3 p-5 txtc3 rounded-xl  shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-[clamp(0.5rem,3vw,1.5rem)]"  style={{ fontFamily: "'Outfit', sans-serif" }}>
               <p>Je m'appelle Loucas et l'informatique me passionne. Et si on apprennait à se connaitre ? </p>
             </div>
-            <div className="text-2xl w-[30%] bgc2 p-5 rounded-xl txtc3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"  style={{ fontFamily: "'Outfit', sans-serif" }}>
-              <p>Originaire des montagnes des hautes-alpes, Je suis actuellement étudiant à l'IUT2 de Grenoble. Curieux et créatif, je suis bassiste à mes heures perdues, et en constante recherche de nouvelles choses a experimenter ou créer</p>
+            <div className=" w-[30%] bgc3 p-5 rounded-xl txtc3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-[clamp(0.5rem,3vw,1.2rem)]"  style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <p>Originaire des montagnes des hautes-alpes, Je suis actuellement étudiant à l'IUT2 de Grenoble.</p>
             </div>
 
             {/* <div className='flex flex-wrap justify-around w-[30%] item-start'>
