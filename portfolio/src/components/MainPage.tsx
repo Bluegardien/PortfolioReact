@@ -51,7 +51,7 @@ function MainPage() {
               <p>Je m'appelle Loucas et l'informatique me passionne. Et si on apprennait à se connaitre ? </p>
             </div>
             <div className=" w-[30%] bgc3 p-5 rounded-xl txtc1 shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-[clamp(0.5rem,3vw,1.2rem)]"  style={{ fontFamily: "'Outfit', sans-serif" }}>
-              <p>Originaire des montagnes des hautes-alpes, Je suis actuellement étudiant à l'IUT2 de Grenoble.</p>
+              <p>Originaire des montagnes des hautes-alpes, Je suis actuellement étudiant à l'IUT2 de Grenoble en BUT Informatique.</p>
             </div>
 
             {/* <div className='flex flex-wrap justify-around w-[30%] item-start'>

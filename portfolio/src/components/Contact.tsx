@@ -32,7 +32,7 @@ export default function Contact() {
                 <span className="text-xl">Contactez moi par mail</span>
               </div>
               
-              <h2 className="text-2xl mx-auto">loucasburellier@gmail.com</h2>
+              <h2 className="text-2xl mx-auto">loucas.burellier@etu.univ-grenoble-alpes.fr</h2>
             </div>
             <a href="https://linkedin.com/in/loucas-burellier" className='w-[80%] h-[30%] ml-[10%]'>
               <div className='w-full h-full bgc2 text-3xl m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
