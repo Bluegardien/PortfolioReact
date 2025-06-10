@@ -16,11 +16,11 @@ function ParcoursPage() {
             <div className='absolute left-[67%] top-[-30%] w-[30%] h-[100%]'>
                 <SittedScene/>
             </div>
-            <h2 className='text-center left-[42%] top-[-20%] absolute text-2xl bgc2 p-3 rounded-xl m-5 border-4 border-black' style={{ fontFamily: "'Outfit', sans-serif" }}>IUT2 Informatique<br/>Grenoble</h2>
+            <h2 className='text-center left-[42%] top-[-25%] absolute text-2xl bgc2 p-3 rounded-xl m-5 border-4 border-black' style={{ fontFamily: "'Outfit', sans-serif" }}>IUT2 Informatique<br/>Grenoble</h2>
             <div className='absolute left-[36%] top-[-10%] w-[30%] h-[100%]'>
                 <ComputerScene/>
             </div>
-            <h2 className='text-center left-[14%] top-[0%] absolute text-2xl bgc2 p-3 rounded-xl m-5 border-4 border-black' style={{ fontFamily: "'Outfit', sans-serif" }}>Lycée d'altitude<br/>Briancon</h2>
+            <h2 className='text-center left-[14%] top-[-5%] absolute text-2xl bgc2 p-3 rounded-xl m-5 border-4 border-black' style={{ fontFamily: "'Outfit', sans-serif" }}>Lycée d'altitude<br/>Briancon</h2>
             <div className='absolute left-[7%] top-[10%] w-[30%] h-[100%]'>
                 <BookScene/>
             </div>

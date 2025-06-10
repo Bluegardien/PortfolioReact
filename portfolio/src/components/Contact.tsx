@@ -15,34 +15,35 @@ export default function Contact() {
                 Me Contacter
                 </h1>
         <div className="w-full h-[70%] flex justify-between p-10">
-          <div className="w-[70%] h-full">
+          <div className="w-[50%] h-full">
             <ContactScene />
           </div>
-          <div className='w-[40%] h-full flex txtc3 flex-wrap'>
-            <div className='w-[80%] h-[30%] ml-[10%] bgc2 text-3xl m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
+          <div className='w-[45%] h-full flex txtc3 flex-wrap'>
+            <div className='w-[80%] h-[30%] ml-[10%] m-5 bgc2 text-3xl rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
               <div className="mx-auto text-center flex items-center justify-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-3 text-5xl" />
                 <span className="text-xl">Appelez-moi</span>
               </div>
-              <h2 className="text-2xl mx-auto">07 66 25 52 05</h2>
+              <h2 className="text-[clamp(1rem,1.3vw,2rem)] mx-auto">07 66 25 52 05</h2>
             </div>
-            <div className='w-[80%] h-[30%] mr-[10%] bgc2  m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
+
+            <div className='w-[80%] h-[30%] mr-[10%] m-5 bgc2 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
               <div className="mx-auto text-center flex items-center justify-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-5xl"  />
                 <span className="text-xl">Contactez moi par mail</span>
               </div>
-              
-              <h2 className="text-2xl mx-auto">loucas.burellier@etu.univ-grenoble-alpes.fr</h2>
+              <h2 className="text-[clamp(1rem,1.3vw,2rem)] mx-auto">loucas.burellier@etu.univ-grenoble-alpes.fr</h2>
             </div>
-            <a href="https://linkedin.com/in/loucas-burellier" className='w-[80%] h-[30%] ml-[10%]'>
-              <div className='w-full h-full bgc2 text-3xl m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
-                <div className="mx-auto text-center flex items-center justify-center">
-                  <FontAwesomeIcon icon={faLinkedin} className="mr-3 text-6xl leading-none m-0 p-0" />
-                  <span className="text-xl">Linkedin</span>
-                </div>
-                <h2 className="text-2xl mx-auto">linkedin.com/in/loucas-burellier</h2>
+
+            <div className='w-[80%] h-[25%] ml-[10%] m-5 bgc2 text-3xl m-5 rounded-lg flex flex-col justify-evenly shadow-[0_3px_10px_rgb(0,0,0,0.2)]' style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <div className="mx-auto text-center flex items-center justify-center">
+                <FontAwesomeIcon icon={faLinkedin} className="mr-3 text-6xl leading-none m-0 p-0" />
+                <span className="text-xl">Linkedin</span>
               </div>
-            </a>
+              <a href="https://linkedin.com/in/loucas-burellier" className=' mx-auto'>
+                <h2 className="text-[clamp(1rem,1.3vw,2rem)] mx-auto">linkedin.com/in/loucas-burellier</h2>
+              </a>
+            </div>
           </div>
         </div>
         

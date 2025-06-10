@@ -146,16 +146,16 @@ export default function Browse() {
                 }} />
             </div>
         </div>
-        <div className="w-full h-[70%] flex justify-between p-10">  
-            <div className='h-full w-[30%] flex flex-col justify-around bgc3 p-5'>
-              <h1 className="text-3xl txtc1" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
-              <p className="txtc1">{currentProject.descriptionlg}</p>
-              <h3>{currentProject.details}</h3>
-              <div className="flex flex-wrap mt-4">
+        <div className="w-full h-[80%] 2xl:h-[70%] flex justify-between p-10 ">  
+            <div className='h-full w-[40%] flex flex-col justify-around bgc3 p-5'>
+              <h1 className="text-[clamp(1rem,2vw,2rem)] txtc1" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.description}</h1>
+              <p className="txtc1 text-[clamp(0.5rem,1vw,1rem)]">{currentProject.descriptionlg}</p>
+              <h3 className="text-[clamp(0.7rem,1.5vw,1.5rem)] txtc1">{currentProject.details}</h3>
+              <div className="flex flex-wrap ">
                 {currentProject.tags && currentProject.tags.map((tag: string) => (
                   <h2
                     key={tag}
-                    className='text-2xl bgc2 rounded-xl txtc3 m-5 p-2'
+                    className='text-[clamp(0.5rem,1.2vw,1.5rem)] bgc2 rounded-xl txtc3 m-1 p-2'
                     style={{ fontFamily: "'Outfit', sans-serif" }}
                   >
                     {tag}
@@ -170,7 +170,7 @@ export default function Browse() {
                       <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                   )}
-                  <h1 className="text-4xl txtc3 mx-auto text-center" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
+                  <h1 className="text-4xl txtc1 mx-auto text-center" style={{ fontFamily: "'Outfit', sans-serif" }}>{currentProject.title}</h1>
                   {filteredIndices.length > 1 && (
                     <button onClick={next} className='p-5'>
                       <FontAwesomeIcon icon={faChevronRight} />
